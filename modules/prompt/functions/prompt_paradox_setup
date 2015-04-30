@@ -64,6 +64,8 @@ function prompt_paradox_pwd {
   else
     _prompt_paradox_pwd="${${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}//\%/%%}/${${pwd:t}//\%/%%}"
   fi
+
+  _prompt_paradox_pwd=$pwd
 }
 
 function prompt_paradox_print_elapsed_time {
